@@ -8,8 +8,8 @@ $InstallatiePad = "D:\VirtualBox VMs\$MapNaam"
 $isoPadServer = "C:\Users\noaht\Downloads\en_windows_server_2019_x64_dvd_4cb967d8.iso"
 
 #Pad instellen naar de map waarin de scripts staan
-$gedeeldeMapDC = "C:\Users\noaht\Documents\bachelorproef\POC\Scripts\DC\Scripts"
-$gedeeldeMap = "C:\Users\noaht\Documents\bachelorproef\POC\Scripts\ActiveXperts"
+$gedeeldeMapDC = "C:\Users\noaht\Documents\BP-POC\Scripts\DC\Scripts"
+$gedeeldeMap = "C:\Users\noaht\Documents\BP-POC\Scripts\ActiveXperts"
 $env:PATH = $env:PATH + ";C:\Program Files\Oracle\VirtualBox"
 
 # maken van intnet
