@@ -8,8 +8,8 @@ $InstallatiePad = "D:\VirtualBox VMs\$MapNaam"
 $isoPadServer = "C:\Users\noaht\Downloads\en_windows_server_2019_x64_dvd_4cb967d8.iso"
 
 #Pad instellen naar de map waarin de scripts staan
-$gedeeldeMapDC = "C:\Users\noaht\Documents\BP-POC\Scripts\DC\Scripts"
-$gedeeldeMap = "C:\Users\noaht\Documents\BP-POC\Scripts\ActiveXperts"
+$gedeeldeMapDC = "C:\Users\noaht\Documents\bachelorproef\POC\Scripts\DC\Scripts"
+$gedeeldeMap = "C:\Users\noaht\Documents\bachelorproef\POC\Scripts\ActiveXperts"
 $env:PATH = $env:PATH + ";C:\Program Files\Oracle\VirtualBox"
 
 # maken van intnet
@@ -19,7 +19,7 @@ VBoxManage natnetwork add --netname BP-internal --network "192.168.0.0/24" --ena
 function Alle_VMs_Aanmaken{
     
     VM_Aanmaken -naam 'dc' -ostype Windows2019_64 -cores 1 -vram 64 -ram 6144 -geheugen 40960 -groep $MapNaam
-    VM_Aanmaken -naam 'activexperts' -ostype Windows2019_64 -cores 1 -vram 64 -ram 6144 -geheugen 40960 -groep $MapNaam
+    VM_Aanmaken -naam 'activexperts' -ostype Windows2019_64 -cores 1 -vram 64 -ram 4096 -geheugen 40960 -groep $MapNaam
 }
 
 function VM_Aanmaken{

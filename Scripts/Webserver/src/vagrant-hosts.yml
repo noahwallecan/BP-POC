@@ -13,7 +13,7 @@
   #     guest: 3000
   #   - host: 9443
   #     guest: 9443
-  memory: 4096
+  memory: 5120
   intnet: true
 
 

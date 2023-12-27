@@ -4,8 +4,7 @@ function set_netwerk {
   # IP ROUTE
   ip route add 192.168.0.0/24 via 192.168.0.5 dev enp0s8
   # DNS
-  echo "nameserver 8.8.8.8
-  nameserver 192.168.0.1" > /etc/resolv.conf
+  echo "nameserver 192.168.0.1" > /etc/resolv.conf
   # IP ADRES
   echo "GATEWAY=192.168.0.5" >> /etc/sysconfig/network-scripts/ifcfg-enp0s8
   # NO SSH ROOT & USER LOGIN
@@ -218,6 +217,7 @@ server {
 }
 
 
+
 echo "Changing network settings"
 set_netwerk
 
@@ -244,7 +244,3 @@ install_wordpress
 
 echo "Installing rallly"
 install_rallly
-
-
-# na NAT uittrekken en bridged ingestoken:
-# sudo systemctl start NetworkManager.service
