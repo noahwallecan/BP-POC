@@ -1,0 +1,1 @@
+Restart-Computer -ComputerName dc-vm -Force
